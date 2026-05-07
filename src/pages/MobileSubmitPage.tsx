@@ -103,7 +103,6 @@ export function MobileSubmitPage() {
       }
       const ua = navigator.userAgent
       await createPost(value.trim(), ua, firstEnteredIso)
-      setValue('')
       setMsg('好耶，已丢进墙里了。')
     } catch {
       setMsg('提交失败：可能是网络或服务没启动。')
